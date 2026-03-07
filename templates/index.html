@@ -1,1 +1,52 @@
-<h1>Welcome to the home page</h1>
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="p-5 mb-4 bg-light rounded-3 shadow-sm border">
+    <div class="container-fluid py-5 text-center">
+        <h1 class="display-4 fw-bold text-primary">Student Exam Performance</h1>
+        <p class="col-md-8 fs-4 mx-auto text-secondary">
+            Unlock insights into student success. Our advanced Machine Learning model predicts exam scores based on demographic and socio-economic data.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <a class="btn btn-primary btn-lg px-4" href="/predictdata" role="button">
+                <i class="fas fa-rocket me-2"></i> Start Prediction
+            </a>
+            <a class="btn btn-outline-secondary btn-lg px-4" href="https://github.com/sarim-aliii/mlproject" target="_blank" role="button">
+                <i class="fab fa-github me-2"></i> View Code
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row align-items-md-stretch">
+    <div class="col-md-4 mb-4">
+        <div class="h-100 p-4 bg-white border rounded-3 shadow-sm">
+            <div class="text-primary mb-3">
+                <i class="fas fa-database fa-2x"></i>
+            </div>
+            <h2>Data-Driven</h2>
+            <p>Trained on a robust dataset of student performance, analyzing factors like parental education, test preparation, and lunch type.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="h-100 p-4 bg-white border rounded-3 shadow-sm">
+            <div class="text-success mb-3">
+                <i class="fas fa-bullseye fa-2x"></i>
+            </div>
+            <h2>High Accuracy</h2>
+            <p>Utilizes an optimized regression pipeline to deliver precise score estimates, helping educators identify students who need support.</p>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="h-100 p-4 bg-white border rounded-3 shadow-sm">
+            <div class="text-warning mb-3">
+                <i class="fas fa-laptop-code fa-2x"></i>
+            </div>
+            <h2>Simple Interface</h2>
+            <p>No coding required. Just select the student's details from the dropdowns and get an instant prediction.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
